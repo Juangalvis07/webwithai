@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Tundra</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de enlazar tu archivo CSS -->
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1 class="logo">TUNDRA</h1>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#portfolio">Portafolio</a></li>
+                    <li><a href="#about">Sobre mí</a></li>
+                    <li><a href="#services">Servicios</a></li>
+                    <li><a href="#testimonials">Testimonios</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="hero">
+            <h2>Capturando momentos únicos</h2>
+            <p>Especialista en fotografía de retratos, naturaleza y .</p>
+            <a href="#portfolio" class="cta-button">Ver Portafolio</a>
+        </div>
+    </header>
+
+    <!-- Portafolio -->
+    <section id="portfolio" class="portfolio-section">
+        <h2>Portafolio</h2>
+        <p>Explora algunas de mis mejores fotografías.</p>
+        <div class="gallery">
+            <img src="/mi-primer-web-chatgpt/imagenes/IMG_1703.JPG" alt="Foto 1">
+            <img src="/mi-primer-web-chatgpt/imagenes/IMG_2662.JPG" alt="Foto 2">
+            <img src="/mi-primer-web-chatgpt/imagenes/IMG_4137.JPG" alt="Foto 3">
+            <img src="/mi-primer-web-chatgpt/imagenes/IMG_5176.JPG" alt="Foto 4">
+            <!-- Añade más fotos según sea necesario -->
+        </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="about" class="about-section">
+        <h2>Sobre mí</h2>
+        <p>Mi nombre es [Nombre del fotógrafo], y soy un fotógrafo profesional con [años de experiencia]. Mi pasión es capturar la esencia de cada momento y transformarla en una imagen que cuenta una historia.</p>
+    </section>
+
+    <!-- Servicios -->
+    <section id="services" class="services-section">
+        <h2>Servicios</h2>
+        <ul>
+            <li>Fotografía de bodas</li>
+            <li>Fotografía de retrato</li>
+            <li>Fotografía de eventos</li>
+            <li>Edición y retoque fotográfico</li>
+            <!-- Agrega más servicios si es necesario -->
+        </ul>
+    </section>
+
+    <!-- Testimonios -->
+    <section id="testimonials" class="testimonials-section">
+        <h2>Testimonios</h2>
+        <div class="testimonial">
+            <p>"Las fotos de [Fotógrafo] capturaron todos los momentos especiales de nuestra boda. ¡Increíble!"</p>
+            <span>- Cliente A</span>
+        </div>
+        <div class="testimonial">
+            <p>"Muy profesional y fácil de trabajar. Las fotos son impresionantes."</p>
+            <span>- Cliente B</span>
+        </div>
+        <!-- Agrega más testimonios según sea necesario -->
+    </section>
+
+    <!-- Contacto -->
+    <section id="contact" class="contact-section">
+        <h2>Contacto</h2>
+        <p>¿Interesado en trabajar juntos? ¡Contáctame!</p>
+        <form action="enviar_formulario.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Tundra. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

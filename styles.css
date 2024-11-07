@@ -1,0 +1,235 @@
+/* Reset de márgenes y paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Colores principales */
+:root {
+    --color-bg: #040000;
+    --color-text: #ecd9d9;
+    --color-accent: #de7c7c;
+}
+
+/* General */
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    line-height: 1.6;
+}
+
+/* Contenedor general */
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Header */
+header {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    padding: 20px 0;
+    text-align: center;
+}
+
+header .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--color-accent);
+}
+
+header nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--color-accent);
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 36px;
+    color: var(--color-accent);
+    margin-bottom: 10px;
+}
+
+.hero p {
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #ff6666;
+}
+
+/* Portafolio */
+.portfolio-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.portfolio-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery img {
+    width: 400px;
+    height: 650px;
+    object-fit: cover;
+    border: 2px solid var(--color-accent);
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Sobre mí */
+.about-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.about-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Servicios */
+.services-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.services-section ul {
+    list-style: none;
+}
+
+.services-section ul li {
+    padding: 10px 0;
+    color: var(--color-text);
+}
+
+/* Testimonios */
+.testimonials-section {
+    background-color: #111;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.testimonials-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 2px solid var(--color-accent);
+    border-radius: 5px;
+}
+
+/* Contacto */
+.contact-section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.contact-section h2 {
+    color: var(--color-accent);
+    margin-bottom: 20px;
+}
+
+.contact-section form {
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    color: var(--color-text);
+    font-weight: bold;
+}
+
+.contact-section input,
+.contact-section textarea {
+    padding: 10px;
+    border: 1px solid #444;
+    border-radius: 5px;
+    background-color: #222;
+    color: var(--color-text);
+}
+
+.contact-section button {
+    padding: 10px;
+    background-color: var(--color-accent);
+    color: var(--color-text);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-section button:hover {
+    background-color: #ff6666;
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    color: var(--color-text);
+}
